@@ -25,7 +25,9 @@ Finally, aggregate docking solutions are mapped onto receptor and ligand structu
 
 # Next steps:
 - expand conversion capabilities to other server results
-- craft a more useful class/OOP architecture for this software (current working class is one giant class of all functions defined in notebook version)
+- craft a useful class/OOP architecture for this software:
+  - store initial conversion and contact calculations as parent class - remove redundant, slow calculations
+  - define children classes that inherit calculations from parent class, construct heatmaps, histograms, etc.
 - expand upon residue analysis tools:
   - more refined heatmap resolution
   - analysis of residue types, more residue metadata
